@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "354076281517",
+    "firebase_url": "https://dvsqfood-default-rtdb.firebaseio.com",
+    "project_id": "dvsqfood",
+    "storage_bucket": "dvsqfood.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:354076281517:android:f5ce80a83d2c46bdfb1424",
+        "android_client_info": {
+          "package_name": "com.DvsQ.foodorder"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1LRKZGKCzCZAR06Q_XFAtNKsBbRPj_fo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:354076281517:android:a919c2c46bde0478fb1424",
+        "android_client_info": {
+          "package_name": "com.example.DvsQFood"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1LRKZGKCzCZAR06Q_XFAtNKsBbRPj_fo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.DvsQ.foodorder">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"
+        tools:ignore="ProtectedPermissions" />
+
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.DEFAULT"/>
+            <data android:scheme="https" />
+        </intent>
+    </queries>
+
+    <application
+        android:name="com.DvsQ.foodorder.ControllerApplication"
+        android:allowBackup="false"
+        android:icon="@drawable/icon"
+        android:label="Oder Food"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme"
+        android:dataExtractionRules="@xml/data_extraction_rules">
+        <activity android:name="com.DvsQ.foodorder.activity.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.DvsQ.foodorder.activity.MainActivity"
+            android:exported="false"/>
+        <activity
+            android:name="com.DvsQ.foodorder.activity.FoodDetailActivity"
+            android:exported="false"/>
+        <activity
+            android:name="com.DvsQ.foodorder.activity.SignUpActivity"
+            android:exported="false"/>
+        <activity
+            android:name="com.DvsQ.foodorder.activity.SignInActivity"
+            android:exported="false"/>
+        <activity
+            android:name="com.DvsQ.foodorder.activity.ForgotPasswordActivity"
+            android:exported="false"/>
+        <activity
+            android:name="com.DvsQ.foodorder.activity.ChangePasswordActivity"
+            android:exported="false"/>
+        <activity
+            android:name="com.DvsQ.foodorder.activity.AdminMainActivity"
+            android:exported="false"/>
+        <activity
+            android:name="com.DvsQ.foodorder.activity.OrderHistoryActivity"
+            android:exported="false"/>
+        <activity
+            android:name="com.DvsQ.foodorder.activity.AddFoodActivity"
+            android:exported="false"/>
+        <activity
+            android:name="com.DvsQ.foodorder.activity.AdminReportActivity"
+            android:exported="false"/>
+    </application>
+
+</manifest>
